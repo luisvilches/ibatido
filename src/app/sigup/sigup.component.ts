@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core'; 
+import { Component, OnInit, ViewChild} from '@angular/core'; 
 import { CityService } from '../city.service';
 
 
@@ -9,8 +9,11 @@ import { CityService } from '../city.service';
   providers: [CityService]
 })
 export class SigupComponent implements OnInit {
+  @ViewChild("select") selectId;
   public Regiones:any;
   public Response:any;
+  public Select:any;
+  public Comunas:any;
 
   constructor(private city:CityService) {}
 
@@ -23,7 +26,9 @@ export class SigupComponent implements OnInit {
 
 
   changeRegions(value){
-    console.log(value);
+    this.Select = document.getElementById("select");
+    var data = this.Regiones.filter(result => {return result.region === this.Select.value});
+    this.Comunas = data[0].comunas;
   }
 
 }
