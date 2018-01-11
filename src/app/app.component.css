@@ -1,0 +1,211 @@
+.login ul li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.login ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.login ul li a:hover{
+    color: #2d2d2d;
+}
+
+.login ul {
+    text-align: right;
+    margin-right: 10px;
+    border-bottom: 1px solid #7cd6d7;
+    padding-bottom: 8px; 
+}
+
+nav.principal{
+    background: #24babc;
+    color: white;
+    padding: 5px 80px;
+}
+
+.list-header li{
+    display: inline-block;
+    margin-left: 5px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.shopicon a i{
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.shopicon a{
+    color: #fff;
+}
+
+.shopicon a:hover{
+    color: #2d2d2d;
+}
+
+.shopicon span{
+    border-radius: 100px;
+    margin-left: -8px;
+    background: #444;
+}
+
+#search{
+    border-radius: 50px;
+    border: 1px solid transparent;
+}
+.pdheader .logo h3{
+    margin-top: -20px;
+}
+
+.logo a{
+    text-decoration: none;
+
+}
+.logo h3{
+    font-style: italic;
+    font-size: 60px;
+    color: #fff;
+    font-family: "AvenirNextLTPro-Regular";
+}
+.logo p{
+    margin-top: -20px;
+    font-size: 12px;
+    color: #fff;
+    font-family: "AvenirNextLTPro-Regular";
+}
+
+.pdheader{
+    padding: 20px 0px;
+}
+
+
+footer{
+    background: #22282e;
+    min-height: 200px;
+}
+
+
+.contactinfo ul li{
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+}
+footer .contactinfo ul li i{
+    color: #24babc;
+    font-size: 50px;
+    position: relative;
+    top: 12px;
+    left: -10px;
+}
+
+footer .contactinfo,footer .footerinfo{
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #32373d;
+}
+
+footer .footerinfo{
+    padding-top: 20px;
+}
+
+@media (min-width:991px){
+    footer .container {
+        padding: 20px 0px;
+    }
+}
+
+footer .footerinfo ul li.title{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+footer .footerinfo ul li{
+    list-style: none;
+}
+
+footer .footerinfo ul li a {
+    color: #898d90;
+    font-size: 12px;
+}
+
+footer .footerinfo ul li a:hover {
+    color: #24babc;
+}
+
+footer .postfooter h5{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 8px;
+}
+
+footer .postfooter{
+    padding: 15px 0px;
+}
+
+footer .newsletter li{
+    list-style: none;
+    display: inline-block;
+}
+
+footer .newsletter li button{
+    margin-left: -8px;
+    margin-top: -1px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background: #24babc;
+    color: #fff;
+    font-weight: 100px;
+}
+
+footer .newsletter li input{
+    border-radius: 3px;
+    border: 1px solid transparent;
+    background: #3a424b;
+    color: #fff;
+}
+
+footer .newsletter li input:focus,footer .newsletter li input:active{
+    border: 1px solid transparent !important;
+}
+
+footer .newsletter li input:focus{
+    border: none;
+}
+
+footer .mediospagos{
+    max-height: 40px;
+    margin: 0 auto;
+    display: block;
+}
+
+.router{
+    min-height: 165px;
+}
+
+@media (max-width: 768px){
+    .login ul{
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .list-header li{
+        margin-top: 10px;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .shopicon i{
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+    .shopicon span{
+        text-align: center;  
+    }
+}

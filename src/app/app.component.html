@@ -1,21 +1,100 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="principal">
+  <div class="login">
+    <ul>
+      <li><a [routerLink]="['/sigin']">Iniciar sesion</a></li>
+      <li>|</li>
+      <li><a [routerLink]="['/sigup']">Registrarse</a></li>
+    </ul>
+  </div>
+  <div class="container pdheader">
+    <div class="row">
+      <div class="col-md-3 col-xs-12 logo">
+        <a [routerLink]="['/']"><h3>Ibatido</h3></a>
+        <a [routerLink]="['/']"><p>Distribuidor independiente Herbalife</p></a>
+      </div>
+      <div class="col-md-5 col-xs-12">
+        <input type="text" id="search" placeholder="Buscar..." class="form-control">
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <ul class="list-header">
+          <li><i class="fa fa-phone" aria-hidden="true"></i> +56 9 8492 3552</li>
+          <li class="shopicon"><a [routerLink]="['/cart']"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span class="badge badge-secondary">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
 
-<router-outlet></router-outlet>
+<section class="container router">
+  <router-outlet></router-outlet>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row contactinfo">
+      <div class="col-md-4">
+        <ul>
+          <li><i class="fa fa-phone" aria-hidden="true"></i></li>
+          <li>+56 9 8492 3552</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul>
+          <li><i class="fa fa-life-ring" aria-hidden="true"></i></li>
+          <li>informacion@ibatido.cl</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul>
+          <li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+          <li>Lun - Vie / 09:00 - 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row footerinfo">
+      <div class="col-md-3">
+        <div class="logo">
+          <a [routerLink]="['/']"><h3>Ibatido</h3></a>
+          <a [routerLink]="['/']"><p>Distribuidor independiente Herbalife</p></a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li class="title">Productos</li>
+          <li><a href="">producto 1</a></li>
+          <li><a href="">producto 2</a></li>
+          <li><a href="">producto 3</a></li>
+          <li><a href="">producto 4</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li class="title">Nuestra compañia</li>
+          <li><a href="">Quienes Somos</a></li>
+          <li><a href="">Delivery</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li class="title">Su cuenta</li>
+          <li><a href="">Carrito de compras</a></li>
+          <li><a href="">Información personal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row postfooter">
+      <div class="col-md-4">
+        <h5><i class="fa fa-envelope" aria-hidden="true"></i> Únase al boletín de <span class="logo">Ibatido</span></h5>
+      </div>
+      <div class="col-md-4">
+        <ul class="newsletter">
+          <li><input type="text" class="form-control"></li>
+          <li><button class="btn">Suscribir</button></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <img class="mediospagos" src="assets/img/khipu.png" alt="">
+      </div>
+    </div>
+  </div>
+</footer>
