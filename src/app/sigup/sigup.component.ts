@@ -8,8 +8,7 @@ import { CityService } from '../city.service';
   styleUrls: ['./sigup.component.css'],
   providers: [CityService]
 })
-export class SigupComponent implements OnInit {
-  @ViewChild("select") selectId;
+export class SigupComponent implements OnInit { 
   public Regiones:any;
   public Response:any;
   public Select:any;
@@ -26,7 +25,7 @@ export class SigupComponent implements OnInit {
 
 
   changeRegions(value){
-    this.Select = document.getElementById("select");
+    this.Select = <HTMLElement>document.getElementById("select");
     var data = this.Regiones.filter(result => {return result.region === this.Select.value});
     this.Comunas = data[0].comunas;
   }

@@ -13,6 +13,8 @@ import { SigupComponent } from './sigup/sigup.component';
 import { DesctacadosHomeComponent } from './desctacados-home/desctacados-home.component';
 import { SliderHomeComponent } from './slider-home/slider-home.component';
 import { CalugasHomeComponent } from './calugas-home/calugas-home.component';
+import { BannersHomeComponent } from './banners-home/banners-home.component';
+import { BannersInferioresComponent } from './banners-inferiores/banners-inferiores.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { CalugasHomeComponent } from './calugas-home/calugas-home.component';
     SigupComponent,
     DesctacadosHomeComponent,
     SliderHomeComponent,
-    CalugasHomeComponent
+    CalugasHomeComponent,
+    BannersHomeComponent,
+    BannersInferioresComponent
   ],
   imports: [
     BrowserModule,

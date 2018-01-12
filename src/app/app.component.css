@@ -23,6 +23,7 @@
 
 nav.principal{
     position: fixed;
+    top:0;
     width: 100%;
     z-index: 999999999;
     background: #32373d;
@@ -195,6 +196,7 @@ footer .mediospagos{
 
 .router{
     min-height: 165px;
+    margin-top: 115px;
 }
 
 @media (max-width: 768px){
