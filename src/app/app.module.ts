@@ -12,6 +12,7 @@ import { SiginComponent } from './sigin/sigin.component';
 import { SigupComponent } from './sigup/sigup.component';
 import { DesctacadosHomeComponent } from './desctacados-home/desctacados-home.component';
 import { SliderHomeComponent } from './slider-home/slider-home.component';
+import { CalugasHomeComponent } from './calugas-home/calugas-home.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SliderHomeComponent } from './slider-home/slider-home.component';
     SiginComponent,
     SigupComponent,
     DesctacadosHomeComponent,
-    SliderHomeComponent
+    SliderHomeComponent,
+    CalugasHomeComponent
   ],
   imports: [
     BrowserModule,
