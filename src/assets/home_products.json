@@ -1,0 +1,19 @@
+{
+    "productos":[
+        {
+            "name":"Batido Herbalife Vainilla",
+            "price":"22.000",
+            "img":"/assets/img/batido-herbalife-menta.jpg"
+        },
+        {
+            "name":"Batido Herbalife Menta",
+            "price":"22.000",
+            "img":"/assets/img/batido-herbalife-menta.jpg"
+        },
+        {
+            "name":"Batido Herbalife Frutilla",
+            "price":"22.000",
+            "img":"/assets/img/batido-herbalife-menta.jpg"
+        }
+    ]
+}

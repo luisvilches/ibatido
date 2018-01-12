@@ -1,36 +1,41 @@
-.login ul li {
+.pdheader ul.login li {
     display: inline-block;
     margin-left: 5px;
+    position: relative;
+    top: 18px;
 }
 
-.login ul li a{
+.pdheader ul.login li a{
     color: #fff;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
 }
 
-.login ul li a:hover{
-    color: #2d2d2d;
+.pdheader ul li a:hover{
+    color: #24babc;
 }
 
-.login ul {
+.pdheader ul {
     text-align: right;
     margin-right: 10px;
-    border-bottom: 1px solid #7cd6d7;
     padding-bottom: 8px; 
 }
 
 nav.principal{
-    background: #24babc;
+    position: fixed;
+    width: 100%;
+    z-index: 999999999;
+    background: #32373d;
     color: white;
-    padding: 5px 80px;
+    padding-top: 0px;
+    border-bottom: 1px solid #2d2d2d;
 }
 
 .list-header li{
     display: inline-block;
     margin-left: 5px;
     list-style: none;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .shopicon a i{
@@ -55,30 +60,34 @@ nav.principal{
 #search{
     border-radius: 50px;
     border: 1px solid transparent;
+    position: relative;
+    top: 18px;
 }
 .pdheader .logo h3{
-    margin-top: -20px;
+    margin-top: -5px;
 }
 
 .logo a{
     text-decoration: none;
-
+    position: relative;
+    top: 10px;
 }
 .logo h3{
     font-style: italic;
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
     font-family: "AvenirNextLTPro-Regular";
 }
 .logo p{
     margin-top: -20px;
-    font-size: 12px;
+    font-size: 10px;
     color: #fff;
     font-family: "AvenirNextLTPro-Regular";
 }
 
 .pdheader{
-    padding: 20px 0px;
+    padding: 10px 0px;
+    
 }
 
 
@@ -208,4 +217,21 @@ footer .mediospagos{
     .shopicon span{
         text-align: center;  
     }
+}
+
+nav.secondary{
+    height: 40px;
+    background: #fff;
+}
+
+nav.secondary ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav.secondary ul{
+    text-align: center;
+    padding: 5px;
 }

@@ -1,31 +1,27 @@
 <nav class="principal">
-  <div class="login">
-    <ul>
-      <li><a [routerLink]="['/sigin']">Iniciar sesion</a></li>
-      <li>|</li>
-      <li><a [routerLink]="['/sigup']">Registrarse</a></li>
-    </ul>
-  </div>
   <div class="container pdheader">
     <div class="row">
-      <div class="col-md-3 col-xs-12 logo">
+      <div class="col-md-4 col-xs-12 logo">
         <a [routerLink]="['/']"><h3>Ibatido</h3></a>
         <a [routerLink]="['/']"><p>Distribuidor independiente Herbalife</p></a>
       </div>
-      <div class="col-md-5 col-xs-12">
+      <div class="col-md-4 col-xs-12">
         <input type="text" id="search" placeholder="Buscar..." class="form-control">
       </div>
-      <div class="col-md-4 col-xs-12">
-        <ul class="list-header">
-          <li><i class="fa fa-phone" aria-hidden="true"></i> +56 9 8492 3552</li>
-          <li class="shopicon"><a [routerLink]="['/cart']"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span class="badge badge-secondary">0</span></a></li>
+      <div class="col-md-4">
+        <ul class="login">
+            <li class="shopicon"><a [routerLink]="['/cart']"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span class="badge badge-secondary">0</span></a></li>
+          <li><a [routerLink]="['/sigin']">Iniciar sesion</a></li>
+          <li>|</li>
+          <li><a [routerLink]="['/sigup']">Registrarse</a></li>
         </ul>
       </div>
     </div>
   </div>
 </nav>
 
-<section class="container router">
+
+<section class="router">
   <router-outlet></router-outlet>
 </section>
 
